@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32802.440
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Solmaz_Performans", "Solmaz_Performans\Solmaz_Performans.csproj", "{DA135A80-0C75-41E1-BE6A-926694FC556A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DA135A80-0C75-41E1-BE6A-926694FC556A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA135A80-0C75-41E1-BE6A-926694FC556A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA135A80-0C75-41E1-BE6A-926694FC556A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA135A80-0C75-41E1-BE6A-926694FC556A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {46362217-AC5B-462F-8B89-74FA98921FAF}
+	EndGlobalSection
+EndGlobal

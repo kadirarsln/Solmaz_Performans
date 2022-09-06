@@ -1,0 +1,239 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DA135A80-0C75-41E1-BE6A-926694FC556A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Solmaz_Performans</RootNamespace>
+    <AssemblyName>Solmaz_Performans</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.CodeParser.v22.1, Version=22.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.Desktop.v22.1, Version=22.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.v22.1, Version=22.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.DataAccess.v22.1, Version=22.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Drawing.v22.1, Version=22.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Office.v22.1.Core, Version=22.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v22.1.Core, Version=22.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.RichEdit.v22.1.Core, Version=22.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v22.1, Version=22.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Xpo.v22.1, Version=22.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v22.1, Version=22.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v22.1, Version=22.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraGrid.v22.1, Version=22.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v22.1, Version=22.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v22.1, Version=22.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FrmAntrepoDosyasi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAntrepoDosyasi.Designer.cs">
+      <DependentUpon>FrmAntrepoDosyasi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmATADosyasi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmATADosyasi.Designer.cs">
+      <DependentUpon>FrmATADosyasi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDigerDosyasi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDigerDosyasi.Designer.cs">
+      <DependentUpon>FrmDigerDosyasi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDilekceDosyasi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDilekceDosyasi.Designer.cs">
+      <DependentUpon>FrmDilekceDosyasi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmListele.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmListele.Designer.cs">
+      <DependentUpon>FrmListele.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmNCTSDosyasi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmNCTSDosyasi.Designer.cs">
+      <DependentUpon>FrmNCTSDosyasi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmOzetBeyanDosyasi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmOzetBeyanDosyasi.Designer.cs">
+      <DependentUpon>FrmOzetBeyanDosyasi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRehber.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRehber.Designer.cs">
+      <DependentUpon>FrmRehber.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSBIFDosyasi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSBIFDosyasi.Designer.cs">
+      <DependentUpon>FrmSBIFDosyasi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSolmazPerformans.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSolmazPerformans.Designer.cs">
+      <DependentUpon>FrmSolmazPerformans.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSozluBeyanDosyasi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSozluBeyanDosyasi.Designer.cs">
+      <DependentUpon>FrmSozluBeyanDosyasi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmİhracatDosyasi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmİhracatDosyasi.Designer.cs">
+      <DependentUpon>FrmİhracatDosyasi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmİthalatDosyasi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmİthalatDosyasi.Designer.cs">
+      <DependentUpon>FrmİthalatDosyasi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrnKalemSayisi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrnKalemSayisi.Designer.cs">
+      <DependentUpon>FrnKalemSayisi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SqlConnect.cs" />
+    <EmbeddedResource Include="FrmAntrepoDosyasi.resx">
+      <DependentUpon>FrmAntrepoDosyasi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmATADosyasi.resx">
+      <DependentUpon>FrmATADosyasi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDigerDosyasi.resx">
+      <DependentUpon>FrmDigerDosyasi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDilekceDosyasi.resx">
+      <DependentUpon>FrmDilekceDosyasi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmListele.resx">
+      <DependentUpon>FrmListele.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmNCTSDosyasi.resx">
+      <DependentUpon>FrmNCTSDosyasi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmOzetBeyanDosyasi.resx">
+      <DependentUpon>FrmOzetBeyanDosyasi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRehber.resx">
+      <DependentUpon>FrmRehber.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSBIFDosyasi.resx">
+      <DependentUpon>FrmSBIFDosyasi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSolmazPerformans.resx">
+      <DependentUpon>FrmSolmazPerformans.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSozluBeyanDosyasi.resx">
+      <DependentUpon>FrmSozluBeyanDosyasi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmİhracatDosyasi.resx">
+      <DependentUpon>FrmİhracatDosyasi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmİthalatDosyasi.resx">
+      <DependentUpon>FrmİthalatDosyasi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrnKalemSayisi.resx">
+      <DependentUpon>FrnKalemSayisi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\DataSources\FrmAntrepoDosyasi.datasource" />
+    <None Include="Properties\DataSources\FrmATADosyasi.datasource" />
+    <None Include="Properties\DataSources\FrmDigerDosyasi.datasource" />
+    <None Include="Properties\DataSources\FrmDilekceDosyasi.datasource" />
+    <None Include="Properties\DataSources\FrmKalemSayisi.datasource" />
+    <None Include="Properties\DataSources\FrmListele.datasource" />
+    <None Include="Properties\DataSources\FrmNCTSDosyasi.datasource" />
+    <None Include="Properties\DataSources\FrmOzetBeyanDosyasi.datasource" />
+    <None Include="Properties\DataSources\FrmRehber.datasource" />
+    <None Include="Properties\DataSources\FrmSBIFDosyasi.datasource" />
+    <None Include="Properties\DataSources\FrmSolmazPerformans.datasource" />
+    <None Include="Properties\DataSources\FrmSozluBeyanDosyasi.datasource" />
+    <None Include="Properties\DataSources\FrmİhracatDosyasi.datasource" />
+    <None Include="Properties\DataSources\FrmİthalatDosyasi.datasource" />
+    <None Include="Properties\DataSources\Program.datasource" />
+    <None Include="Properties\DataSources\Solmaz_Performans.Properties.Resources.datasource" />
+    <None Include="Properties\DataSources\Solmaz_Performans.Properties.Settings.datasource" />
+    <None Include="Properties\DataSources\SqlConnect.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
